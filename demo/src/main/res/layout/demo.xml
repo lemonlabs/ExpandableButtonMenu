@@ -1,0 +1,32 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:ebm="http://schemas.android.com/apk/res-auto"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+
+    <lt.lemonlabs.android.expandablebuttonmenu.ExpandableMenuOverlay
+        android:id="@+id/button_menu"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/circle_home"
+
+        ebm:dimAmount="0.8"
+
+        ebm:mainButtonSize="0.25"
+        ebm:otherButtonSize="0.22"
+        ebm:distanceY="0.17"
+        ebm:distanceX="0.28"
+        ebm:bottomPad="0.02"
+
+        ebm:closeButtonSrc="@drawable/circle_close"
+        ebm:leftButtonSrc="@drawable/circle_1"
+        ebm:midButtonSrc="@drawable/circle_2"
+        ebm:rightButtonSrc="@drawable/circle_3"
+
+        ebm:leftButtonText="@string/action_left"
+        ebm:midButtonText="@string/action_mid"
+        ebm:rightButtonText="@string/action_right"/>
+
+</RelativeLayout>

@@ -1,0 +1,24 @@
+<resources>
+    <declare-styleable name="ExpandableMenuOverlay">
+        <!-- DIALOG OVERLAY -->
+        <attr name="adjustViewSize" format="boolean"/>
+        <attr name="dimAmount" format="float"/>
+
+        <!-- MENU BUTTON SIZE -->
+        <attr name="mainButtonSize" format="float"/>
+        <attr name="otherButtonSize" format="float"/>
+        <attr name="distanceY" format="float"/>
+        <attr name="distanceX" format="float"/>
+        <attr name="bottomPad" format="float"/>
+
+        <!-- MENU BUTTON RESOURCES -->
+        <attr name="closeButtonSrc" format="integer"/>
+        <attr name="leftButtonSrc" format="integer"/>
+        <attr name="leftButtonText" format="integer"/>
+        <attr name="midButtonSrc" format="integer"/>
+        <attr name="midButtonText" format="integer"/>
+        <attr name="rightButtonSrc" format="integer"/>
+        <attr name="rightButtonText" format="integer"/>
+
+    </declare-styleable>
+</resources>

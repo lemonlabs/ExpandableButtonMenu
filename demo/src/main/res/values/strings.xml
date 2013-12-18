@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">ExpandableButtonMenuDemo</string>
+    <string name="action_left">Squeeze a lemon</string>
+    <string name="action_mid">Add some sugar</string>
+    <string name="action_right">Make lemonade</string>
+
+</resources>
