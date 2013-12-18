@@ -1,4 +1,5 @@
 ExpandableButtonMenu
+<<<<<<< HEAD
 ==================
 
 ExpandableButtonMenu is an Android library which implements an expandable button that can be used as a substitute of a fixed size menu.
@@ -112,3 +113,4 @@ License
 [2]: https://github.com/JakeWharton/NineOldAndroids">https://github.com/JakeWharton/NineOldAndroids/
 [3]: https://raw.github.com/lemonlabs/ExpandableButtonMenu/master/images/image.png
 [4]: http://www.lemonlabs.co
+=======
