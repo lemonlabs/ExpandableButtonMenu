@@ -106,6 +106,7 @@ public class ExpandableMenuOverlay extends ImageButton implements DialogInterfac
      * Dismiss the dialog, removing screen dim and hiding the expanded menu
      */
     public void dismiss() {
+        mButtonMenu.setAnimating(false);
         mDialog.dismiss();
     }
 

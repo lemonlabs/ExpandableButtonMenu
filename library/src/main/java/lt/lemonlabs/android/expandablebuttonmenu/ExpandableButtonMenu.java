@@ -89,6 +89,11 @@ public class ExpandableButtonMenu extends RelativeLayout implements View.OnClick
      */
     private boolean mAllowOverlayClose = true;
 
+    /**
+     * Flag indicating that menu is being animated
+     */
+    private boolean mAnimating;
+
 
     /**
      * Menu button position variables in % of screen width or height
@@ -236,6 +241,8 @@ public class ExpandableButtonMenu extends RelativeLayout implements View.OnClick
         mAllowOverlayClose = allow;
     }
 
+    public void setAnimating(boolean isAnimating) { mAnimating = isAnimating;}
+
     public boolean isExpanded() {
         return mExpanded;
     }
@@ -267,10 +274,13 @@ public class ExpandableButtonMenu extends RelativeLayout implements View.OnClick
      * Toggle the expandable menu button, expanding or collapsing it
      */
     public void toggle() {
-        if (mExpanded) {
-            animateCollapse();
-        } else {
-            animateExpand();
+        if (!mAnimating) {
+            mAnimating = true;
+            if (mExpanded) {
+                animateCollapse();
+            } else {
+                animateExpand();
+            }
         }
     }
 
@@ -578,6 +588,7 @@ public class ExpandableButtonMenu extends RelativeLayout implements View.OnClick
                     @Override
                     public void run() {
                         invalidateViewsForPreHC();
+                        mAnimating = false;
                         mExpanded = !mExpanded;
                     }
                 }, 50);
