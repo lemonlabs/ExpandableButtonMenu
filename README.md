@@ -110,6 +110,6 @@ License
 
 [1]: http://allthingsd.com/20130802/yahoo-paid-60m-to-70m-for-rockmelt-will-dump-browser-and-use-tech-to-better-deliver-its-media-and-mobile-properties
 [2]: https://github.com/JakeWharton/NineOldAndroids">https://github.com/JakeWharton/NineOldAndroids/
-[3]: https://raw.github.com/lemonlabs/ExpandableButtonMenu/master/images/image.png
+[3]: https://raw.github.com/lemonlabs/ExpandableButtonMenu/master/images/demo.gif
 [4]: http://www.lemonlabs.co
 =======
