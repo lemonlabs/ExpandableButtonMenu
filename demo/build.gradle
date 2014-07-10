@@ -1,12 +1,13 @@
+apply plugin: 'com.android.application'
+
 buildscript {
     repositories {
         mavenCentral()
     }
     dependencies {
-        classpath 'com.android.tools.build:gradle:0.7.+'
+        classpath 'com.android.tools.build:gradle:0.12.+'
     }
 }
-apply plugin: 'android'
 
 repositories {
     mavenCentral()
@@ -14,7 +15,7 @@ repositories {
 
 android {
     compileSdkVersion 19
-    buildToolsVersion "19.0.0"
+    buildToolsVersion "20.0.0"
 
     defaultConfig {
         minSdkVersion 9
@@ -23,6 +24,6 @@ android {
 }
 
 dependencies {
-    compile 'com.android.support:appcompat-v7:+'
+    compile 'com.android.support:appcompat-v7:19.1.0'
     compile project(':library')
 }
