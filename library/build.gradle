@@ -1,24 +1,15 @@
-buildscript {
-    repositories {
-        mavenCentral()
-    }
-    dependencies {
-        classpath 'com.android.tools.build:gradle:0.12.+'
-    }
-}
 apply plugin: 'com.android.library'
-
-repositories {
-    mavenCentral()
-}
 
 android {
     compileSdkVersion 19
     buildToolsVersion '20.0.0'
 
     defaultConfig {
+        applicationId "lt.lemonlabs.android.expandablebuttonmenu"
         minSdkVersion 9
         targetSdkVersion 19
+        versionCode 1
+        versionName "1.0.0"
     }
 
     compileOptions {
@@ -31,3 +22,5 @@ dependencies {
     compile 'com.android.support:appcompat-v7:19.1.0'
     compile 'com.nineoldandroids:library:2.4.0'
 }
+
+apply from: './maven_push.gradle'
