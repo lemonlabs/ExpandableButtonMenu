@@ -9,18 +9,12 @@ It is a Foursquare like button that expands into three buttons.
 Including in your project
 -------------------------
 
-The library supports the Android gradle build system. Create a `contrib` folder in your project, clone the library into that folder
-and add this to your `settings.gradle`:
-
-    include 'contrib:ExpandableButtonMenu:library'
-
-and to your `build.gradle`:
+The library is available on Maven Central
 
     dependencies {
-        compile project('contrib:ExpandableButtonMenu:library')
+        compile 'co.lemonlabs:expandable-button-menu:1.0.0'
     }
 
-or you can check the demo code.
 
 Usage
 -----
